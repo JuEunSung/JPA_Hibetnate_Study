@@ -1,0 +1,32 @@
+CREATE TABLE `MEMBER` (
+	`member_no` INT(11) NOT NULL AUTO_INCREMENT,
+	`member_id` VARCHAR(50) NOT NULL,
+	`member_pw` VARCHAR(50) NOT NULL,
+	`name` VARCHAR(50) NOT NULL,
+	`status` VARCHAR(50) NOT NULL,
+	`register_datetime` DATETIME NULL DEFAULT CURRENT_TIMESTAMP,
+	PRIMARY KEY (`member_no`),
+	UNIQUE INDEX `MEMBER_member_id` (`member_id`)
+)
+COMMENT='하이버네이트 연습을 위한 MEMBER 테이블'
+COLLATE='utf8_general_ci'
+ENGINE=InnoDB
+;
+
+CREATE TABLE `ARTICLE` (
+	`article_no` INT(11) NOT NULL AUTO_INCREMENT,
+	`member_no` INT(11) NOT NULL DEFAULT '0',
+	`title` VARCHAR(150) NOT NULL DEFAULT '0',
+	`contents` LONGTEXT NOT NULL,
+	`status` VARCHAR(50) NOT NULL,
+	`hits` INT(11) NULL DEFAULT '0',
+	`likes` INT(11) NULL DEFAULT '0',
+	`register_datetime` DATETIME NULL DEFAULT CURRENT_TIMESTAMP,
+	PRIMARY KEY (`article_no`),
+	INDEX `ARTICLE_MEMBER_NO` (`member_no`),
+	CONSTRAINT `ARTICLE_MEMBER_NO` FOREIGN KEY (`member_no`) REFERENCES `MEMBER` (`member_no`) ON UPDATE CASCADE
+)
+COMMENT='하이버네이트 연습을 위한 ARTICLE 테이블'
+COLLATE='utf8_general_ci'
+ENGINE=InnoDB
+;

@@ -21,7 +21,7 @@
     <property name="hibernate.format_sql" value="true"/>  <!-- 출력문 정렬 -->
     <property name="hibernate.user_sql_comment" value="true"/>  <!-- 쿼리 출력시 주석까지 출력 -->
     <property name="hibernate.id.new_generator_mapping" value="true"/>  <!-- 새로운 키 생성 전략을 사용 -->
-    <!-- <property name="hibernate.hbm2ddl.auto" value="create"/> -->  <!-- DDL 수행 옵션 (기존 테이블을 지우고 새로 생성 -->
+    <property name="hibernate.hbm2ddl.auto" value="create"/>  <!-- DDL 수행 옵션 (기존 테이블을 지우고 새로 생성 -->
   </properties>
 
 </persistence-unit>
