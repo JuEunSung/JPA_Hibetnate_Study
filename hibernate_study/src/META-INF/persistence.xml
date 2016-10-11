@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence xmlns="http://xmlns.jcp.org/xml/ns/persistence"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence
+                                 http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd"
+             version="2.1">
+<persistence-unit name="study">
+
+  <properties>
+    <!-- 필수 속성 -->
+    <property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver"/>
+    <property name="javax.persistence.jdbc.url" value="jdbc:mysql://10.4.30.69:3306/hibernate_study"/>
+    <property name="javax.persistence.jdbc.user" value="blog"/>
+    <property name="javax.persistence.jdbc.password" value="blog"/>
+    <property name="hibernate.dialect" value="org.hibernate.dialect.MySQLDialect"/>
+    <property name="connection.pool_size" value="1"/>
+    <property name="connection.auto_commit" value="false"/>
+
+    <!-- 옵션 -->
+    <property name="hibernate.show_sql" value="true"/>  <!-- 실행 쿼리 출력 -->
+    <property name="hibernate.format_sql" value="true"/>  <!-- 출력문 정렬 -->
+    <property name="hibernate.user_sql_comment" value="true"/>  <!-- 쿼리 출력시 주석까지 출력 -->
+    <property name="hibernate.id.new_generator_mapping" value="true"/>  <!-- 새로운 키 생성 전략을 사용 -->
+    <!-- <property name="hibernate.hbm2ddl.auto" value="create"/> -->  <!-- DDL 수행 옵션 (기존 테이블을 지우고 새로 생성 -->
+  </properties>
+
+</persistence-unit>
+</persistence>
