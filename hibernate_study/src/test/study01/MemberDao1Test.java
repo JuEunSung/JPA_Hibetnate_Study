@@ -1,9 +1,9 @@
 package test.study01;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertTrue;
 
-import org.junit.After;
-import org.junit.Before;
+import org.junit.AfterClass;
+import org.junit.BeforeClass;
 import org.junit.FixMethodOrder;
 import org.junit.Test;
 import org.junit.runners.MethodSorters;
@@ -22,11 +22,11 @@ import study.study01.MemberDao1;
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
 public class MemberDao1Test {
 
-  private MemberDao1 memberDao;
-  private Member1 [] member = new Member1[3];
+  private static MemberDao1 memberDao;
+  private static Member1 [] member = new Member1[3];
 
-  @Before
-  public void before() {
+  @BeforeClass
+  public static void before() {
 
     memberDao = new MemberDao1();
 
@@ -35,8 +35,8 @@ public class MemberDao1Test {
     member[2] = new Member1("ju", "789", "주은성", "1");
   }
 
-  @After
-  public void after() {
+  @AfterClass
+  public static void after() {
 
     memberDao.emf.close();
   }
