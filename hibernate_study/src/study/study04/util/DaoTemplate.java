@@ -1,4 +1,4 @@
-package study.study03_3.util;
+package study.study04.util;
 
 import java.util.List;
 
@@ -52,8 +52,6 @@ public class DaoTemplate <T> {
       } else if(type.equals(QueryType.DELETE)) {
         em.remove(t);
       }
-    } catch(Exception e) {
-      throw e;
     } finally {
       tx.commit();
     }
