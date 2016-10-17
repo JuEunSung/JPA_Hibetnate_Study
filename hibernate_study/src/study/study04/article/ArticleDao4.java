@@ -2,29 +2,9 @@ package study.study04.article;
 
 import java.util.List;
 
-import study.study04.util.DaoTemplate;
+import study.study04.util.UpdateDaoTemplate;
 
-public class ArticleDao4 {
-
-  private DaoTemplate<Article4> getDaoTemplate() {
-
-    return new DaoTemplate<Article4>();
-  }
-
-  public void insert(Article4 article) throws Exception {
-
-    getDaoTemplate().insert(article);
-  }
-
-  public void update(Article4 article) throws Exception {
-
-    getDaoTemplate().update(article);
-  }
-
-  public void delete(Article4 article) throws Exception {
-
-    getDaoTemplate().delete(article);
-  }
+public class ArticleDao4 extends UpdateDaoTemplate<Article4> {
 
   public Article4 select(int articleNo) throws Exception {
 

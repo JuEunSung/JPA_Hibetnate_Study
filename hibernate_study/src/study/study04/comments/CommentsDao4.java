@@ -2,19 +2,9 @@ package study.study04.comments;
 
 import java.util.List;
 
-import study.study04.util.DaoTemplate;
+import study.study04.util.UpdateDaoTemplate;
 
-public class CommentsDao4 {
-
-  private DaoTemplate<Comments4> getDaoTemplate() {
-
-    return new DaoTemplate<Comments4>();
-  }
-
-  public void insert(Comments4 comments) throws Exception {
-
-    getDaoTemplate().insert(comments);
-  }
+public class CommentsDao4 extends UpdateDaoTemplate <Comments4> {
 
   public List<Comments4> selectByArticleNo(int articleNo) throws Exception {
 
@@ -28,15 +18,5 @@ public class CommentsDao4 {
     String query = "SELECT c FROM Comments4 c WHERE c.member.memberNo = " + memberNo;
 
     return getDaoTemplate().selectListQuery(query);
-  }
-
-  public void update(Comments4 comments) throws Exception {
-
-    getDaoTemplate().update(comments);
-  }
-
-  public void delete(Comments4 comments) throws Exception {
-
-    getDaoTemplate().delete(comments);
   }
 }
