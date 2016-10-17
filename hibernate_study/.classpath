@@ -1,24 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
 	<classpathentry kind="src" path="src"/>
-	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
-	<classpathentry kind="lib" path="C:/Users/wndmstjd90/Desktop/hibernate-study/antlr-2.7.7.jar"/>
-	<classpathentry kind="lib" path="C:/Users/wndmstjd90/Desktop/hibernate-study/cdi-api-1.1.jar"/>
-	<classpathentry kind="lib" path="C:/Users/wndmstjd90/Desktop/hibernate-study/classmate-1.3.0.jar"/>
-	<classpathentry kind="lib" path="C:/Users/wndmstjd90/Desktop/hibernate-study/dom4j-1.6.1.jar"/>
-	<classpathentry kind="lib" path="C:/Users/wndmstjd90/Desktop/hibernate-study/el-api-2.2.jar"/>
-	<classpathentry kind="lib" path="C:/Users/wndmstjd90/Desktop/hibernate-study/geronimo-jta_1.1_spec-1.1.1.jar"/>
-	<classpathentry kind="lib" path="C:/Users/wndmstjd90/Desktop/hibernate-study/hibernate-commons-annotations-5.0.1.Final.jar"/>
-	<classpathentry kind="lib" path="C:/Users/wndmstjd90/Desktop/hibernate-study/hibernate-core-5.2.3.Final.jar"/>
-	<classpathentry kind="lib" path="C:/Users/wndmstjd90/Desktop/hibernate-study/hibernate-entitymanager-5.0.7.Final.jar"/>
-	<classpathentry kind="lib" path="C:/Users/wndmstjd90/Desktop/hibernate-study/hibernate-jpa-2.1-api-1.0.0.Final.jar" sourcepath="C:/Users/wndmstjd90/.m2/repository/org/hibernate/javax/persistence/hibernate-jpa-2.1-api/1.0.0.Final/hibernate-jpa-2.1-api-1.0.0.Final-sources.jar"/>
-	<classpathentry kind="lib" path="C:/Users/wndmstjd90/Desktop/hibernate-study/jandex-2.0.0.Final.jar"/>
-	<classpathentry kind="lib" path="C:/Users/wndmstjd90/Desktop/hibernate-study/javassist-3.20.0-GA.jar"/>
-	<classpathentry kind="lib" path="C:/Users/wndmstjd90/Desktop/hibernate-study/javax.inject-1.jar"/>
-	<classpathentry kind="lib" path="C:/Users/wndmstjd90/Desktop/hibernate-study/jboss-interceptors-api_1.1_spec-1.0.0.Beta1.jar"/>
-	<classpathentry kind="lib" path="C:/Users/wndmstjd90/Desktop/hibernate-study/jboss-logging-3.3.0.Final.jar"/>
-	<classpathentry kind="lib" path="C:/Users/wndmstjd90/Desktop/hibernate-study/jsr250-api-1.0.jar"/>
-	<classpathentry kind="lib" path="C:/Users/wndmstjd90/Desktop/hibernate-study/mysql-connector-java-5.1.38.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/Hibernate Reference Library"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/4"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
